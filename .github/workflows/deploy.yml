@@ -6,10 +6,7 @@ on:
   # push 到 main 分支时触发
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+# 可参考 https://blog.csdn.net/weixin_43832950/article/details/131523047
 jobs:
   build-and-deploy:
     # 运行所需要的虚拟机环境
