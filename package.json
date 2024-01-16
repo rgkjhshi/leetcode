@@ -1,0 +1,24 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "力扣算法题目",
+  "main": "index.js",
+  "author": "moyusi",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgkjhshi/leetcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rgkjhshi/leetcode/issues"
+  },
+  "homepage": "https://github.com/rgkjhshi/leetcode#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "vuepress": "^1.9.10"
+  }
+}
