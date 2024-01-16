@@ -17,11 +17,24 @@ module.exports = {
     // 主题设置
     themeConfig: {
         search: true,
-        // 导航栏
-        navbar: true,
-        lastUpdated: 'Last Updated', // string | boolean
+        // 可以禁用导航栏
+        // navbar: false,
+        nav: [
+            { text: '首页', link: '/' },
+            { text: '算法', link: '/question/' },
+            {
+                text: 'Languages',
+                items: [
+                    { text: 'Chinese', link: '/language/chinese/' },
+                    { text: 'English', link: '/language/english/' }
+                ]
+            }
+        ],
+        lastUpdated: '上次更新', // string | boolean
         // 自动生成侧边栏
         sidebar: 'auto',
+        // 假定是 GitHub. 同时也可以是一个完整的 GitHab URL
+        repo: 'rgkjhshi/leetcode',
     },
     plugins: ['@vuepress/back-to-top']
 }
