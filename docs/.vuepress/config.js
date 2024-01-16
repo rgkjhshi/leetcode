@@ -32,7 +32,7 @@ module.exports = {
                 path: '/question/',
                 children: [
                     '/question/0001.两数之和',
-                    '/question/0001.两数之和'
+                    '/question/0002.两数相加'
                 ]
             },
             {
