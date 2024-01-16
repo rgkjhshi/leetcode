@@ -1,6 +1,6 @@
 
 module.exports = {
-    base: '/',
+    base: '/leetcode/',
     title: 'LeetCode',
     description: '算法学习',
     // markdown 设置
