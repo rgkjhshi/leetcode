@@ -60,4 +60,4 @@ console.log('你好，VuePress！')
 
 # 图片
 
-![/static下的静态资源](./static/img/404.png)
+[//]: # (![/static下的静态资源]&#40;./static/img/404.png&#41;)
