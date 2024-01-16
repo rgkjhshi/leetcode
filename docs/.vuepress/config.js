@@ -1,4 +1,3 @@
-
 module.exports = {
     base: '/leetcode/',
     title: 'LeetCode',
@@ -7,12 +6,6 @@ module.exports = {
     markdown: {
         // 行号
         lineNumbers: true,
-        // markdown-it-anchor 的选项
-        anchor: { permalink: true, permalinkBefore: true, permalinkSymbol: '#' },
-        // markdown-it-toc 的选项
-        toc: { includeLevel: [2, 3] },
-        // 外部链接
-        // externalLinks: { target: '_target', rel: 'noopener noreferrer' },
     },
     // 主题设置
     themeConfig: {
