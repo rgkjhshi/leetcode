@@ -1,6 +1,6 @@
 module.exports = {
     base: '/leetcode/',
-    title: 'LeetCode',
+    title: '魔芋丝炒算法',
     description: '算法学习',
     // markdown 设置
     markdown: {
@@ -36,7 +36,8 @@ module.exports = {
                 ]
             },
             {
-                title: '分组二',
+                title: '排序算法',
+                path: '/排序算法/',
                 children: [],
             }
         ],
