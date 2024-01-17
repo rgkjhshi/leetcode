@@ -11,9 +11,6 @@ jobs:
   build-and-deploy:
     # 运行所需要的虚拟机环境
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     # 运行步骤 每个短横线 - 表示一个步骤, 从上至下顺序执行
     steps:
       # clone仓库代码到工作流中
@@ -21,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
       # 安装 node 环境
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: '16'
       # 安装依赖
