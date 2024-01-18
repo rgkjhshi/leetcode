@@ -17,7 +17,7 @@ footer: MIT Licensed | Copyright © 2024-present moyusi
 
 ## 哈希表
 
-1. [1.两数之和](./question/0001.两数之和.md)
+1. [1.两数之和](problems/0001.两数之和.md)
 
 # 排序算法
 
