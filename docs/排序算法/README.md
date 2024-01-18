@@ -150,9 +150,9 @@ example() {
 ```java
 // 快速排序
 public void quickSort(int[] array, int left, int right) {
-    // 划分函数, 找到基准应该在的位置
-    int pos = partition(array, left, right);
     if (left < right) {
+        // 划分函数, 找到基准应该在的位置
+        int pos = partition(array, left, right);
         // 左边排序
         quickSort(array, left, pos - 1);
         // 右边排序
@@ -175,7 +175,8 @@ int partition(int[] array, int left, int right) {
         array[right] = array[left];
     }
     // 出循环时总会有 left == right，把 pivot 放到这里
-    A[left] = pivot;
+    array[left] = pivot;
+    // 返回基准在的位置
     return left;
 }
 ```
