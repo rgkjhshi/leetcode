@@ -188,6 +188,37 @@ int partition(int[] array, int left, int right) {
 
 ## 简单选择排序
 
+基本思想: 第`i`趟从`L[i ~ n]`中选择关键字最小的元素与`L[i]`交换, 这样每趟都可确定一个元素的最终位置, 经过`n-1`
+趟就可以使整个序列有序。
+
+算法描述:
+
+```java {9-12}
+// 简单选择排序
+public void selectSort(int[] array, int n) {
+    // 外层循环控制排序的趟数(n-1 趟)
+    for (int i = 0; i < n - 1; i++) {
+        // 记录最小元素位置
+        int min = i;
+        // 从[i, n-1]中选出最小的
+        for (int j = n - 1; j > i; j--) {
+            // 相邻元素比较
+            if (array[min] < array[j]) {
+                min = j;
+            }
+        }
+        // 交换
+        int tmp = array[i];
+        array[i] = array[min];
+        array[min] = tmp;
+    }
+}
+```
+
+* 空间复杂度: `O(1)`
+* 时间复杂度: `O(n^2)`
+* 稳定性: 不稳定
+
 ## 堆排序
 
 ## 归并排序
