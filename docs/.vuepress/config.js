@@ -14,7 +14,7 @@ module.exports = {
         // navbar: false,
         nav: [
             { text: '首页', link: '/' },
-            { text: '算法', link: '/question/' },
+            { text: '算法', link: '/problems/' },
             {
                 text: 'Languages',
                 items: [
