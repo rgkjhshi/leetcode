@@ -150,12 +150,33 @@ example() {
 ```java
 // 快速排序
 public void quickSort(int[] array, int left, int right) {
-
+    // 划分函数, 找到基准应该在的位置
+    int pos = partition(array, left, right);
+    if (left < right) {
+        // 左边排序
+        quickSort(array, left, pos - 1);
+        // 右边排序
+        quickSort(array, pos + 1, right);
+    }
 }
 
 // 划分函数，一趟排序的过程。返回值为基准下标
 int partition(int[] array, int left, int right) {
-
+    // 以第一个元素作为基准
+    int pivot = array[left];
+    while (left < right) {
+        // 从后向前找到第一个小于pivot的元素
+        while (left < right && pivot <= array[right]) right--;
+        // 把小于pivot的元素换到左边
+        array[left] = array[right];
+        // 从前向后找到第一个大于pivot的元素
+        while (left < right && pivot >= array[left]) left++;
+        // 把大于pivot的元素换到右边
+        array[right] = array[left];
+    }
+    // 出循环时总会有 left == right，把 pivot 放到这里
+    A[left] = pivot;
+    return left;
 }
 ```
 
