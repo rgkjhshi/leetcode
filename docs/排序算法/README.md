@@ -24,7 +24,7 @@
 
 算法描述：
 
-```java
+```java {11-13,15}
 // 直接插入排序
 public void insertSort(int[] array, int n) {
     int i, j;
@@ -56,7 +56,7 @@ public void insertSort(int[] array, int n) {
 
 算法描述：
 
-```java
+```java {10-17,19-21}
 // 折半插入排序
 public void binaryInsertSort(int[] array, int n) {
     int i, j;
@@ -95,7 +95,7 @@ public void binaryInsertSort(int[] array, int n) {
 
 算法描述：
 
-```java {9-12}
+```java {8-13}
 // 冒泡排序
 public void bubbleSort(int[] array, int n) {
     // 外层循环控制排序的趟数(n-1 趟)
@@ -147,7 +147,7 @@ example() {
 
 算法描述：
 
-```java
+```java {5,19,21,23,25,28}
 // 快速排序
 public void quickSort(int[] array, int left, int right) {
     if (left < right) {
@@ -193,7 +193,7 @@ int partition(int[] array, int left, int right) {
 
 算法描述:
 
-```java {9-12}
+```java {8-13}
 // 简单选择排序
 public void selectSort(int[] array, int n) {
     // 外层循环控制排序的趟数(n-1 趟)
@@ -202,12 +202,12 @@ public void selectSort(int[] array, int n) {
         int min = i;
         // 从[i, n-1]中选出最小的
         for (int j = n - 1; j > i; j--) {
-            // 相邻元素比较
+            // 更新最小元素位置
             if (array[min] < array[j]) {
                 min = j;
             }
         }
-        // 交换
+        // 最小元素交换到i位置
         int tmp = array[i];
         array[i] = array[min];
         array[min] = tmp;
