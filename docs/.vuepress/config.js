@@ -42,7 +42,7 @@ module.exports = {
                 path: '/problems/',
                 children: [
                     '/problems/0001.两数之和',
-                    '/problems/0002.两数相加'
+                    '/problems/322.零钱兑换'
                 ]
             }
         ],
