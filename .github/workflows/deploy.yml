@@ -32,7 +32,7 @@ jobs:
         # 此actions的官方文档 https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 要不熟的文件夹
+          # 要部署的文件夹
           folder: docs/.vuepress/dist
           # 希望部署到的分支
           branch: gh-pages
